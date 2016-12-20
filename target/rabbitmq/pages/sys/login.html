@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SecDemoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <script src="/static/lib/angular.min.js"></script>
+    <script src="/static/lib/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/global.js"></script>
+    <script src="/static/js/application.js"></script>
+    <script src="/static/js/sys.js"></script>
+</head>
+<body>
+   <form id="loginForm" ng-controller="LoginCtrl">
+       <div class="">
+           <input type="text" placeholder="请输入用户名！" ng-model="user.userName">
+       </div>
+       <div>
+           <input type="password"
+                  placeholder="请输入密码！" ng-model="user.userPassword">
+                  &nbsp; &nbsp;
+           <!--<span>显示*<input type="checkbox" id="showPwd" ng-model="pwdType"-->
+                           <!--ng-true-value="text" ng-false-value="password">-->
+           <!--</span>{{pwdType}}-->
+       </div>
+       <div>
+           <span ng-show="showError = 1" ng-bind="loginError"></span>
+       </div>
+       <div>
+           <input type="button" title="查看表单属性值" ng-click="showForm()">
+       </div>
+       <div>
+           <button ng-click="commitLogin(user)">登录</button>
+       </div>
+   </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SecDemoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>用户角色绑定</title>
+    <script src="/static/lib/angular.min.js"></script>
+    <script src="/static/lib/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/global.js"></script>
+    <script src="/static/js/application.js"></script>
+    <script src="/static/js/u.js"></script>
+</head>
+<body ng-controller="BindRoleCtrl">
+    <div><a href="/pages/user/list.html">返回用户列表</a></div>
+    <form name="userRole">
+        <div >用户名：{{user.userName}}</div></div>
+        <div>所有角色</div>
+        <div id="roleList">
+            <table name="roleSelect">
+                <tr ng-repeat="role in rSelect">
+                    <td>{{role.id}}</td>
+                    <td>{{role.name}}</td>
+                    <td>{{role.description}}</td>
+                    <td>
+                        <input type="checkbox"
+                               ng-click="updateSelectedRole($event,role.id)"
+                               ng-checked="isSelected(role.id)" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>当前绑定角色集：{{currentRoles}}</div>
+        <div>
+            <input type="button" value="提 交" ng-click="updateRoleList()"/>
+        </div>
+    </form>
+</body>
+</html>

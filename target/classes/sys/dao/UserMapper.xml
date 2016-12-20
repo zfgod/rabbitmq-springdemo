@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="sys.dao.UserMapper" >
+  <select id="querySingleUser" resultType="User" parameterType="String">
+     SELECT * from user
+     where userName = #{VALUE }
+  </select>
+
+    <select id="queryUserList" resultType="User">
+        SELECT * from user
+    </select>
+
+    <select id="getCurrentRoles" resultType="int" parameterType="User">
+         SELECT DISTINCT role_id
+         FROM  user_role
+         WHERE user_id = #{userId}
+    </select>
+
+
+</mapper>

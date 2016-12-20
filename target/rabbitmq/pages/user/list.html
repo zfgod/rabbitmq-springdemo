@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SecDemoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+    <script src="/static/lib/angular.min.js"></script>
+    <script src="/static/lib/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/global.js"></script>
+    <script src="/static/js/application.js"></script>
+    <script src="/static/js/u.js"></script>
+</head>
+<body ng-controller="UserListCtrl">
+<div>
+    <a href="/pages/sys/login.html">重新登录</a>
+</div>
+<div>
+    <a href="/pages/sys/main.html">返回主页</a>
+</div>
+<div>
+    <center>用户列表</center>
+</div>
+<div ng-show="dataSize == 0">
+    <center>暂时没有数据</center>
+</div>
+<div ng-show="dataSize>0">
+    <table border="1">
+        <tr>
+            <th>用户名</th>
+            <th>用户真实名</th>
+            <th>用户电话</th>
+            <th>用户qq</th>
+            <th>用户状态</th>
+            <th>操作</th>
+        </tr>
+        <tr ng-repeat="u in uList">
+            <td>{{u.userName}}</td>
+            <td>{{u.userRealName}}</td>
+            <td>{{u.userPhone}}</td>
+            <td>{{u.userQQ}}</td>
+            <td>{{u.status}}</td>
+            <td>
+                <a href="/pages/user/edit.html?id={{u.userId}}">修改</a>
+                <a href="/pages/user/bind.html?id={{u.userId}}&name={{u.userName}}">绑定角色</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

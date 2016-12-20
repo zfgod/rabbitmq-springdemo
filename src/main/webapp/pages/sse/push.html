@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>获得服务器更新</h1>
+<div id="result"></div>
+
+<script>
+    if(typeof(EventSource)!=="undefined")
+    {
+        var source=new EventSource("/sse/letGo/rr.do");//发起请求地址：localhost:8081/letGo/rr.do
+        source.onmessage=function(event)
+        {
+                document.getElementById("result").innerHTML+=event.data + "<br />";
+        };
+    }
+    else
+    {
+        document.getElementById("result").innerHTML="Sorry, your browser does not support server-sent events...";
+    }
+</script>
+
+</body>
+</html>

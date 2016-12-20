@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="cacheEnabled" value="true" />
+        <setting name="lazyLoadingEnabled" value="true" />
+        <!--<setting name="aggressiveLazyLoading" value="false"/>-->
+        <setting name="useGeneratedKeys" value="true" />
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <typeAliases>
+        <package name="sys.model"/>
+        <package name="resource.model"/>
+    </typeAliases>
+
+   <plugins>
+       <!-- 分页助手 单表-->
+       <plugin interceptor="com.github.pagehelper.PageHelper">
+           <property name="dialect" value="mysql"/>
+           <property name="rowBoundsWithCounts" value="true"/>
+       </plugin>
+       <!-- 使用通用mapper简化单表操作-->
+       <plugin interceptor="com.github.abel533.mapperhelper.MapperInterceptor">
+           <property name="IDENTITY" value="mysql"/>
+           <!-- 通用mapper接口-->
+           <property name="mappers" value="com.github.abel533.mapper.Mapper"/>
+       </plugin>
+   </plugins>
+
+    <!-- mapping文件路径配置 -->
+    <mappers>
+        <package name="sys.dao"></package>
+    </mappers>
+</configuration>

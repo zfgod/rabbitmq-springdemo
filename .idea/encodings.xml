@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/main/java/common/filter/CORSFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/common/listener/CustomerSessionLisener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/common/model/Email.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/common/utils/ConfigUpdateUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/common/utils/ParamLoaderUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/common/utils/ResourceBundleUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/mq/other/impl" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/resource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/resource/secImpl/MyAccessDecisionManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/resource/secImpl/MyAuthenticationFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/resource/secImpl/MySecurityFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/resource/secImpl/MySecurityMetadataSource.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/resource/secImpl/MyUserDetailServiceImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/controller/BaseController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/controller/ResourceController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/controller/RoleController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/controller/SysController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/controller/UserController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/dao/LogMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/dao/ResourcesMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/dao/ResourcesRoleMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/dao/RoleMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/dao/ServerinfoMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/dao/UserMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/dao/UserRoleMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/model/Log.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/model/Resources.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/model/ResourcesRoleKey.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/model/Role.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/model/Serverinfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/model/User.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/model/UserRoleKey.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/service/ResourceService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/service/RoleService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/service/UserService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/utils/MethodUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/sys/utils/ParamsUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/ehcache.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/ehcache.xsd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/jdbc.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/log4j.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/rabbitmq/bpm-skyrim-mq-2.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/spring-security.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/spring-transaction.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/index.html" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

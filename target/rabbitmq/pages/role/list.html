@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SecDemoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>角色列表</title>
+    <script src="/static/lib/angular.min.js"></script>
+    <script src="/static/lib/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/global.js"></script>
+    <script src="/static/js/application.js"></script>
+    <script src="/static/js/role.js"></script>
+</head>
+<body ng-controller="RoleListCtrl">
+<div>
+    <a href="/pages/sys/main.html">返回主页</a>
+</div>
+<div>
+    <a href="/pages/role/add.html">添加角色</a>
+</div>
+<div>
+    <center>角色列表</center>
+</div>
+   <div ng-show="dataSize>0">
+       <table>
+           <table class="table table-striped" style="margin: 0px;">
+               <thead>
+               <tr>
+                   <td>选择</td>
+                   <td>角色名称</td>
+                   <td>角色key</td>
+                   <td>角色描述</td>
+                   <td>角色状态</td>
+                   <td>操作</td>
+               </tr>
+               </thead>
+               <tbody>
+               <tr ng-repeat="role in roleList">
+                   <td><input name="id"  type="checkbox" value="{{role.id}}"/></td>
+                   <td>{{role.name}}</td>
+                   <td>{{role.roleKey}}</td>
+                   <td>{{role.description}}</td>
+                   <td>{{role.enable | type_enable}}</td>
+                   <td>
+                       <a href="/pages/role/edit.html?id={{role.id}}">修改</a>
+                       <a href="/pages/role/bind.html?id={{role.id}}&name={{role.name}}">授权</a>
+                   </td>
+               </tr>
+               </tbody>
+           </table>
+       </table>
+   </div>
+   <div ng-show="dataSize == 0">没有数据！</div>
+</body>
+</html>

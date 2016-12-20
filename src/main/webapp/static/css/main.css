@@ -1,0 +1,9 @@
+
+.center{ MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+    height:200px;
+    background:#F00;
+    width:400px;
+    vertical-align:middle;
+    line-height:200px;
+}

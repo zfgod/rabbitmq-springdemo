@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="sys.dao.ResourcesRoleMapper" >
+    <insert id="insertBindRoleRes"  parameterType="Role">
+        INSERT INTO
+        resources_role(id,role_id,resc_id)
+        VALUES
+        <foreach collection="resList" separator=","
+                  index="index" item="item">
+            (null,#{id},#{item})
+        </foreach>
+    </insert>
+</mapper>

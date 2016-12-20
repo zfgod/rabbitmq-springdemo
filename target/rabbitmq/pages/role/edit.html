@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SecDemoApp">
+<head>
+    <meta charset="UTF-8">
+    <title>修改角色</title>
+    <script src="/static/lib/angular.min.js"></script>
+    <script src="/static/lib/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/global.js"></script>
+    <script src="/static/js/application.js"></script>
+    <script src="/static/js/role.js"></script>
+</head>
+<body>
+<div><a href="/pages/role/list.html">返回角色列表</a></div>
+<form ng-controller="RoleEditCtrl">
+    <div>角色名称：</div>
+    <input type="text"  ng-model="role.name" >
+    <div>角色标志：</div>
+    <input type="text"  ng-model="role.roleKey" >
+    <div>角色描述：</div>
+    <input type="text"  ng-model="role.description">
+    <div>角色状态：</div>
+    <input type="text"  ng-model="role.enable">
+    <button name="edit" ng-click="editRole(role)">保存修改</button>
+</form>
+</body>
+</html>

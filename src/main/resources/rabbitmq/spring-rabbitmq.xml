@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/rabbit
+    http://www.springframework.org/schema/rabbit/spring-rabbit-1.0.xsd">
+    <description>rabbitmq 连接服务配置</description>
+
+    <!-- 连接配置 -->
+    <rabbit:connection-factory id="mqConnectionFactory" host="${mq.host}"
+                               username="${mq.username}"
+                               password="${mq.password}"
+                               port="${mq.port}"
+                               virtual-host="${mq.vhost}"/>
+    <rabbit:admin connection-factory="mqConnectionFactory"/>
+
+    <!-- 消息对象json转换类 -->
+
+    <bean id="jsonMessageConverter"
+          class="org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"/>
+    <!-- spring template声明-->
+    <rabbit:template exchange="direct-exchange" id="directExChangeTemplate"
+                     connection-factory="mqConnectionFactory"
+                     message-converter="jsonMessageConverter"/>
+        <!-- 未指定 交换机 -->
+    <rabbit:template  id="noExChangeTemplate"
+                     connection-factory="mqConnectionFactory"
+                     message-converter="jsonMessageConverter"/>
+    <!-- 交换机配置 -->
+    <!--
+      name="zf-direct-exchange",name是交换机的名称
+    -->
+    <!-- direct类型 交换机-->
+    <rabbit:direct-exchange id="direct-exchange" name="zf-direct-exchange"
+                            auto-delete="false" durable="true" >
+        <rabbit:bindings>
+            <!-- queue 可以指定队列名称 或者指定id的队列,指定名称更为清晰-->
+            <!-- 消息发送时的routingKey与key值做完全匹配-->
+            <!--<rabbit:binding queue="queue1" key="zf_direct_queue"></rabbit:binding>-->
+            <rabbit:binding queue="aa" key="zf_direct_queue"></rabbit:binding>
+            <!-- 一个交换机绑定多个队列，key可以相同,可以不同-->
+            <rabbit:binding queue="bb" key="zf_direct_queue"></rabbit:binding>
+            <rabbit:binding queue="cc" key="zf_direct2_queue"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:direct-exchange>
+
+    <!-- topic类型 交换机-->
+    <rabbit:topic-exchange id="topic-exchange" name="zf-topic-exchange"
+                           durable="true" auto-delete="false">
+        <rabbit:bindings>
+            <!-- 消息发送时的routingKey与pattern做模糊匹配
+               *表示一个内容,#表示多个内容
+               -->
+            <rabbit:binding queue="dd" pattern="*.topic.*"></rabbit:binding>
+            <rabbit:binding queue="ee" pattern="topic.#"></rabbit:binding>
+            <rabbit:binding queue="ff" pattern="#.topic"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
+    <!-- fanout 类型 交换机 -->
+    <!-- 消息直接发送到所有绑定此交换机的队列中 -->
+    <rabbit:fanout-exchange name="zf-fanout-exchange" auto-delete="false" durable="true">
+        <rabbit:bindings>
+            <rabbit:binding queue="aa"></rabbit:binding>
+            <rabbit:binding queue="bb"></rabbit:binding>
+        </rabbit:bindings>
+    </rabbit:fanout-exchange>
+
+    <!-- 消息队列配置 -->
+    <!-- name 是消息队列的名称
+      发送消息时是无法直接指定发送到哪个队列中的
+     -->
+
+    <rabbit:queue id="queue1" durable="true" auto-delete="false" name="aa" exclusive="false">
+
+    </rabbit:queue>
+    <rabbit:queue id="queue2" durable="true" auto-delete="false" name="bb" exclusive="false">
+
+    </rabbit:queue>
+    <rabbit:queue id="queue3" durable="true" auto-delete="false" name="cc" exclusive="false">
+
+    </rabbit:queue>
+
+    <rabbit:queue id="queue4" durable="true" auto-delete="false" name="dd" exclusive="false">
+
+    </rabbit:queue>
+    <rabbit:queue id="queue5" durable="true" auto-delete="false" name="ee" exclusive="false">
+
+    </rabbit:queue>
+    <rabbit:queue id="queue6" durable="true" auto-delete="false" name="ff" exclusive="false">
+
+    </rabbit:queue>
+
+
+    <!-- 消费者 监听配置-->
+    <!-- The acknowledge mode: "auto", "manual", or "none".-->
+    <rabbit:listener-container  connection-factory="mqConnectionFactory"
+                                acknowledge="auto" concurrency="1"
+                                message-converter="jsonMessageConverter" prefetch="1">
+        <!-- 一个监听器可以同时监听多个队列中的消息
+        多个监听器可以同时监听一个队列的消息, 非自动确认消息的监听做测试更合适,prefetch来控制每次给的消息数量
+           -->
+        <rabbit:listener ref="mulitiQueueListener" queues="aa,bb" method="onMessage"/>
+        <rabbit:listener ref="oneQueueListener" queues="ff" method="onMessage"/>
+
+    </rabbit:listener-container>
+    <rabbit:listener-container  connection-factory="mqConnectionFactory"
+                                acknowledge="manual" concurrency="1"
+                                message-converter="jsonMessageConverter" prefetch="1" >
+        <rabbit:listener ref="sameQueueListener1" queues="cc" method="onMessage" />
+        <rabbit:listener ref="sameQueueListener2" queues="cc" method="onMessage" />
+    </rabbit:listener-container>
+</beans>
