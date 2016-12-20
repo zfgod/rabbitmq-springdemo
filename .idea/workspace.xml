@@ -1,7 +1,332 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="162c96cd-bea9-43ae-9346-d28762d2688a" name="Default" comment="" />
+    <list default="true" id="162c96cd-bea9-43ae-9346-d28762d2688a" name="Default" comment="去除工具相关和">
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\artifacts\rabbitmq_springDemo_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\artifacts\rabbitmq_springDemo_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__c3p0_c3p0_0_9_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_alibaba_druid_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_alibaba_fastjson_1_2_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_core_2_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_fasterxml_jackson_core_jackson_databind_2_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_github_abel533_mapper_2_3_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_github_jsqlparser_jsqlparser_0_9_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_github_pagehelper_pagehelper_3_7_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_google_guava_guava_r09.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_googlecode_ehcache_spring_annotations_ehcache_spring_annotations_1_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_rabbitmq_amqp_client_4_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_rabbitmq_http_client_1_0_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_sun_mail_mailapi_1_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__com_sun_mail_smtp_1_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__commons_codec_commons_codec_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__commons_collections_commons_collections_3_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__commons_io_commons_io_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__commons_lang_commons_lang_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__javax_activation_activation_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__javax_mail_javax_mail_api_1_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__javax_mail_mail_1_4_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__javax_persistence_persistence_api_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__javax_servlet_jsp_jsp_api_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__javax_validation_validation_api_1_0_0_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__jstl_jstl_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__junit_junit_4_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__log4j_log4j_1_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__mysql_mysql_connector_java_5_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__net_sf_ehcache_ehcache_core_2_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__net_sf_ezmorph_ezmorph_1_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__net_sf_json_lib_json_lib_ext_spring_1_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__net_sf_json_lib_json_lib_jdk15_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_apache_httpcomponents_httpclient_4_3_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_apache_httpcomponents_httpcore_4_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_aspectj_aspectjrt_1_8_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_aspectj_aspectjweaver_1_8_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_hibernate_hibernate_validator_4_2_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_mybatis_mybatis_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_mybatis_mybatis_ehcache_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_mybatis_mybatis_spring_1_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_quartz_scheduler_quartz_2_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_slf4j_slf4j_api_1_7_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_slf4j_slf4j_log4j12_1_7_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_amqp_spring_amqp_1_6_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_amqp_spring_rabbit_1_6_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_retry_spring_retry_1_1_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_security_spring_security_acl_3_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_security_spring_security_config_3_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_security_spring_security_core_3_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_security_spring_security_taglibs_3_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_security_spring_security_web_3_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_aop_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_beans_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_context_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_context_support_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_core_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_expression_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_jdbc_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_messaging_4_2_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_orm_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_oxm_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_test_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_tx_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_web_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\libraries\Maven__org_springframework_spring_webmvc_4_2_3_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\rabbitmq_springDemo.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\common\filter\CORSFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\common\listener\CustomerSessionLisener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\common\model\Email.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\common\utils\ConfigUpdateUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\common\utils\ParamLoaderUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\common\utils\ResourceBundleUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\config\msg.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\ehcache.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\ehcache.xsd" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\controller\MqMessageController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\other\impl\MessageConsumerService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\other\impl\MessageProductorService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\service\DemoListerService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\service\DemoProducerService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\service\MulitiQueueListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\service\OneQueueListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\service\SameQueueListener1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mq\service\SameQueueListener2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\mybatis\mybatis-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\rabbitmq\mq.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\rabbitmq\spring-rabbitmq.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\resource\secImpl\MyAccessDecisionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\resource\secImpl\MyAuthenticationFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\resource\secImpl\MySecurityFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\resource\secImpl\MySecurityMetadataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\resource\secImpl\MyUserDetailServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\spring-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\spring-security.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\spring-transaction.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\controller\BaseController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\controller\ResourceController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\controller\RoleController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\controller\SysController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\controller\UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\LogMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\LogMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\ResourcesMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\ResourcesMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\ResourcesRoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\ResourcesRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\RoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\RoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\ServerinfoMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\ServerinfoMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\UserRoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\dao\UserRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\model\Log.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\model\MqObject.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\model\Resources.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\model\ResourcesRoleKey.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\model\Role.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\model\Serverinfo.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\model\User.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\model\UserRoleKey.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\service\ResourceService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\service\RoleService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\service\UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\utils\MethodUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\classes\sys\utils\ParamsUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\maven-archiver\pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq.war" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\META-INF\MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\common\filter\CORSFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\common\listener\CustomerSessionLisener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\common\model\Email.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\common\utils\ConfigUpdateUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\common\utils\ParamLoaderUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\common\utils\ResourceBundleUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\config\msg.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\ehcache.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\ehcache.xsd" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\controller\MqMessageController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\other\impl\MessageConsumerService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\other\impl\MessageProductorService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\service\DemoListerService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\service\DemoProducerService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\service\MulitiQueueListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\service\OneQueueListener.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\service\SameQueueListener1.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mq\service\SameQueueListener2.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\mybatis\mybatis-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\rabbitmq\mq.properties" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\rabbitmq\spring-rabbitmq.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\resource\secImpl\MyAccessDecisionManager.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\resource\secImpl\MyAuthenticationFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\resource\secImpl\MySecurityFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\resource\secImpl\MySecurityMetadataSource.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\resource\secImpl\MyUserDetailServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\spring-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\spring-security.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\spring-transaction.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\controller\BaseController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\controller\ResourceController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\controller\RoleController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\controller\SysController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\controller\UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\LogMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\LogMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\ResourcesMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\ResourcesMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\ResourcesRoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\ResourcesRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\RoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\RoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\ServerinfoMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\ServerinfoMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\UserRoleMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\dao\UserRoleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\model\Log.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\model\MqObject.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\model\Resources.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\model\ResourcesRoleKey.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\model\Role.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\model\Serverinfo.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\model\User.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\model\UserRoleKey.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\service\ResourceService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\service\RoleService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\service\UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\utils\MethodUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\classes\sys\utils\ParamsUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\amqp-client-4.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\aspectjrt-1.8.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\aspectjweaver-1.8.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\c3p0-0.9.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\commons-beanutils-1.9.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\commons-codec-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\commons-collections-3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\commons-io-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\commons-lang-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\druid-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\ehcache-core-2.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\ehcache-spring-annotations-1.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\ezmorph-1.0.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\fastjson-1.2.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\guava-r09.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\hibernate-jpa-2.1-api-1.0.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\hibernate-validator-4.2.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\http-client-1.0.0.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\httpclient-4.3.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\httpcore-4.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\jackson-annotations-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\jackson-core-2.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\jackson-databind-2.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\javax.mail-api-1.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\json-lib-2.2.2-jdk15.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\json-lib-ext-spring-1.0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\jsqlparser-0.9.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\mail-1.4.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\mailapi-1.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\mapper-2.3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\mybatis-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\mybatis-ehcache-1.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\mybatis-spring-1.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\mysql-connector-java-5.1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\pagehelper-3.7.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\persistence-api-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\quartz-2.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\slf4j-api-1.7.16.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\slf4j-log4j12-1.7.16.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\smtp-1.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-amqp-1.6.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-aop-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-beans-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-context-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-context-support-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-core-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-expression-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-jdbc-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-messaging-4.2.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-orm-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-oxm-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-rabbit-1.6.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-retry-1.1.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-security-acl-3.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-security-config-3.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-security-core-3.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-security-taglibs-3.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-security-web-3.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-test-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-tx-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-web-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\spring-webmvc-4.2.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\lib\validation-api-1.0.0.GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\WEB-INF\web.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\denied.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\amq\amq.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\amq\index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\resource\add.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\resource\edit.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\resource\list.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\role\add.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\role\bind.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\role\edit.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\role\list.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\sse\push.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\sys\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\sys\login.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\sys\main.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\user\bind.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\pages\user\list.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\css\main.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\jsNote" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\js\application.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\js\global.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\js\res.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\js\role.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\js\sys.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\js\u.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\js\xhwStu\app.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\js\xhwStu\glo.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\lib\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\lib\angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\lib\jquery-1.11.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\lib\jquery.zclip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\lib\sea.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\lib\validation\jquery.validate.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\myStu\rabbitmq_springDemo\target\rabbitmq\static\lib\validation\jquery.validate.messages.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mq/controller/MqMessageController.java" afterPath="$PROJECT_DIR$/src/main/java/mq/controller/MqMessageController.java" />
+    </list>
     <ignored path="rabbitmq_springDemo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,10 +365,18 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/mq/controller/MqMessageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44130757">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,14 +421,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SameQueueListener1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SameQueueListener1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/mq/service/SameQueueListener1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1233859">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,16 +446,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-4.9">
               <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MqObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/sys/model/MqObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -151,6 +472,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -202,7 +526,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/rabbitmq/mq.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/mq/service/DemoListerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mq/controller/MqMessageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/mq/service/DemoProducerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/mq/service/MulitiQueueLister.java" />
         <option value="$PROJECT_DIR$/src/main/java/mq/service/MulitiQueuelistener.java" />
@@ -212,6 +535,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/rabbitmq/spring-rabbitmq.xml" />
         <option value="$PROJECT_DIR$/src/main/java/mq/service/MulitiQueueListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/mq/service/SameQueueListener1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mq/controller/MqMessageController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -300,7 +625,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -355,222 +680,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sys" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rabbitmq_springDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -996,15 +1105,15 @@
       <workItem from="1482111035895" duration="692000" />
       <workItem from="1482125263594" duration="2437000" />
       <workItem from="1482130910720" duration="2723000" />
-      <workItem from="1482202518698" duration="19796000" />
+      <workItem from="1482202518698" duration="20470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35226000" />
+    <option name="totallyTimeSpent" value="35900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="0" width="1690" height="1040" extended-state="1" />
+    <frame x="58" y="0" width="1690" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1014,7 +1123,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31286895" sideWeight="0.5021807" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.04305043" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11070111" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49586776" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Code Review" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1022,7 +1131,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26752767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1599016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1030,7 +1139,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19469027" sideWeight="0.4978193" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1880531" sideWeight="0.4978193" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1070,12 +1179,6 @@
           <line>32</line>
           <properties />
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mq/controller/MqMessageController.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mq/service/OneQueueListener.java</url>
@@ -1159,13 +1262,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sys/dao/ServerinfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sys/dao/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1483,36 +1579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mq/service/DemoProducerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mq/controller/MqMessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mq/service/MulitiQueueListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mq/service/OneQueueListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1555,11 +1621,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mq/service/SameQueueListener1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1233859">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mq/service/MulitiQueueListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mq/service/DemoProducerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mq/controller/MqMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44130757">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

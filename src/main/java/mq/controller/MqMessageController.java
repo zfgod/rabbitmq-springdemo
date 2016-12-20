@@ -1,10 +1,8 @@
 package mq.controller;
 
 import mq.service.DemoProducerService;
-import org.springframework.amqp.core.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import sys.model.MqObject;
@@ -23,7 +21,8 @@ public class MqMessageController {
     @RequestMapping(value = "/test")
     @ResponseBody
     public void  sendMessage(MqObject object){
-         producerService.sendMessage(object);
+
+        producerService.sendMessage(object);
     }
 
     @RequestMapping(value = "/any")
