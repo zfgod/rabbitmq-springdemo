@@ -2,7 +2,7 @@
    spring与rabbitmq的整合,消息队列的生成与消费都在此工程,消息代理broker简单学习
    
 ## 消息工作线：producer-channel-exchange-queue-consumer
-
+ 
 ### 流程
   + 消息发送指定交换机和路由指令
   + rabbitmq broker创建通道管理消息,放入指定的交换机,交换机再根据路由指令和与它绑定的队列进行匹配,放入匹配成功的队列中
@@ -43,6 +43,6 @@
       auto-ack：不需要手动给回执
       manual-ack:必须手动给回执
    + 消息的获取：
-      直接指定方法,按照消息体的类型进行转换
+       直接指定方法,按照消息体的类型进行转换
       继承MessageListener, onMessage(Message message),获取消息体并转换
       继承ChannelAwareMessageListener,onMessage(Message message,Channel channel),可以获取channel手动确认消息
