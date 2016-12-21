@@ -24,6 +24,7 @@ public class DemoProducerService {
     //
     public void sendMessage(MqObject object){
         String exchange = hasExChangeTemplate.getExchange();
+        System.out.println(exchange);
 //        也可以更改交换机
 //        template.setExchange("zf_direct_queue");
         hasExChangeTemplate.setEncoding("UTF-8");

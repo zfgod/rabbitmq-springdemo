@@ -11,7 +11,6 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring-config.xml
             ,classpath:spring-security.xml
-            <!--,classpath:rabbitmq/spring-rabbitmq.xml-->
          </param-value>
     </context-param>
 

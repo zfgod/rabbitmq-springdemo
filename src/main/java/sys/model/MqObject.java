@@ -16,13 +16,24 @@ public class MqObject implements Serializable{
 
     private String routingKey;
 
+    private String queue;
+
     @Override
     public String toString() {
         return "MqObject{" +
                 "message='" + message + '\'' +
                 ", exchange='" + exchange + '\'' +
                 ", routingKey='" + routingKey + '\'' +
+                ", queue='" + queue + '\'' +
                 '}';
+    }
+
+    public String getQueue() {
+        return queue;
+    }
+
+    public void setQueue(String queue) {
+        this.queue = queue;
     }
 
     public String getExchange() {

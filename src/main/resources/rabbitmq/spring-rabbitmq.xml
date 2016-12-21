@@ -21,10 +21,11 @@
     <bean id="jsonMessageConverter"
           class="org.springframework.amqp.support.converter.Jackson2JsonMessageConverter"/>
     <!-- spring template声明-->
-    <rabbit:template exchange="direct-exchange" id="directExChangeTemplate"
+        <!-- 指定 默认交换机,填写名称,而不是定义的交换机的ID-->
+    <rabbit:template exchange="zf-direct-exchange" id="directExChangeTemplate"
                      connection-factory="mqConnectionFactory"
                      message-converter="jsonMessageConverter"/>
-        <!-- 未指定 交换机 -->
+        <!-- 未指定 默认交换机 -->
     <rabbit:template  id="noExChangeTemplate"
                      connection-factory="mqConnectionFactory"
                      message-converter="jsonMessageConverter"/>
@@ -53,7 +54,8 @@
                            durable="true" auto-delete="false">
         <rabbit:bindings>
             <!-- 消息发送时的routingKey与pattern做模糊匹配
-               *表示一个内容,#表示多个内容
+               *表示一个内容 不多不少,
+               #表示0个或多个内容: topic.# 可以匹配topic.,topic.a,topic.b.c
                -->
             <rabbit:binding queue="dd" pattern="*.topic.*"></rabbit:binding>
             <rabbit:binding queue="ee" pattern="topic.#"></rabbit:binding>
@@ -100,7 +102,6 @@
                                 acknowledge="auto" concurrency="1"
                                 message-converter="jsonMessageConverter" prefetch="1">
         <!-- 一个监听器可以同时监听多个队列中的消息
-        多个监听器可以同时监听一个队列的消息, 非自动确认消息的监听做测试更合适,prefetch来控制每次给的消息数量
            -->
         <rabbit:listener ref="mulitiQueueListener" queues="aa,bb" method="onMessage"/>
         <rabbit:listener ref="oneQueueListener" queues="ff" method="onMessage"/>
@@ -109,10 +110,7 @@
     <rabbit:listener-container  connection-factory="mqConnectionFactory"
                                 acknowledge="manual" concurrency="1"
                                 message-converter="jsonMessageConverter" prefetch="1" >
-        <!-- 抓取数量过少，每次分配量都不超过第一个的接收量，就会一直在第一个监听进行
-             尽量不这么用
-          -->
-        <!--<rabbit:listener ref="sameQueueListener1" queues="cc" method="onMessage" />-->
+        <rabbit:listener ref="sameQueueListener1" queues="ee" method="onMessage" />
         <rabbit:listener ref="sameQueueListener2" queues="cc" method="onMessage" />
     </rabbit:listener-container>
 </beans>

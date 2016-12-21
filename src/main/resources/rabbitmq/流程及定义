@@ -10,13 +10,14 @@ producer-channel-exchange-queue-consumer
     消息可以设置优先级
 2.broker 处理消息
     2.1 channel
-
+        几乎所有的操作都在channel中进行，channel是进行消息读写的通道。客户端可建立多个channel，每个channel代表一个会话任务
+        
     2.2 exchange
     交换机类型 exchange-type:direct,topic,fanout,header
       direct:
            binding: queue-队列名称, key: 完全匹配routingKey
       topic:
-           binding: queue-队列名称, pattern：模糊匹配routingKey (*表示一个单词,#表示多个单词)
+           binding: queue-队列名称, pattern：模糊匹配routingKey (*表示一个单词,#表示0个或多个单词)
       fanout:
            binding: queue-队列名称, 不需要匹配routingKey,所以绑定的队列都会放入消息
     其他属性：
