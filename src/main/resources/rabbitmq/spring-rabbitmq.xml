@@ -31,6 +31,8 @@
     <!-- 交换机配置 -->
     <!--
       name="zf-direct-exchange",name是交换机的名称
+      auto-delete:交换机使用完成自动删除
+      durable：交换机持久化
     -->
     <!-- direct类型 交换机-->
     <rabbit:direct-exchange id="direct-exchange" name="zf-direct-exchange"
@@ -55,7 +57,7 @@
                -->
             <rabbit:binding queue="dd" pattern="*.topic.*"></rabbit:binding>
             <rabbit:binding queue="ee" pattern="topic.#"></rabbit:binding>
-            <rabbit:binding queue="ff" pattern="#.topic"></rabbit:binding>
+            <rabbit:binding queue="ff" pattern="*.topic"></rabbit:binding>
         </rabbit:bindings>
     </rabbit:topic-exchange>
 
@@ -70,32 +72,30 @@
 
     <!-- 消息队列配置 -->
     <!-- name 是消息队列的名称
-      发送消息时是无法直接指定发送到哪个队列中的
+                发送消息时是无法直接指定发送到哪个队列中的,
+      name="zf-direct-exchange",name是队列的名称
+      auto-delete:队列使用完成自动删除
+      durable：队列持久化
+      exclusive：排他性,如果设置,其他用户看不见,但是此用户链接断开后，rabbitmq会删除此队列，无视是否持久化
      -->
 
-    <rabbit:queue id="queue1" durable="true" auto-delete="false" name="aa" exclusive="false">
+    <rabbit:queue id="queue1" durable="true" auto-delete="false" name="aa" exclusive="false"/>
 
-    </rabbit:queue>
-    <rabbit:queue id="queue2" durable="true" auto-delete="false" name="bb" exclusive="false">
+    <rabbit:queue id="queue2" durable="true" auto-delete="false" name="bb" exclusive="false"/>
 
-    </rabbit:queue>
-    <rabbit:queue id="queue3" durable="true" auto-delete="false" name="cc" exclusive="false">
+    <rabbit:queue id="queue3" durable="true" auto-delete="false" name="cc" exclusive="false"/>
 
-    </rabbit:queue>
+    <rabbit:queue id="queue4" durable="true" auto-delete="false" name="dd" exclusive="false"/>
 
-    <rabbit:queue id="queue4" durable="true" auto-delete="false" name="dd" exclusive="false">
+    <rabbit:queue id="queue5" durable="true" auto-delete="false" name="ee" exclusive="false"/>
 
-    </rabbit:queue>
-    <rabbit:queue id="queue5" durable="true" auto-delete="false" name="ee" exclusive="false">
+    <rabbit:queue id="queue6" durable="true" auto-delete="false" name="ff" exclusive="false"/>
 
-    </rabbit:queue>
-    <rabbit:queue id="queue6" durable="true" auto-delete="false" name="ff" exclusive="false">
-
-    </rabbit:queue>
 
 
     <!-- 消费者 监听配置-->
     <!-- The acknowledge mode: "auto", "manual", or "none".-->
+    <!-- auto -->
     <rabbit:listener-container  connection-factory="mqConnectionFactory"
                                 acknowledge="auto" concurrency="1"
                                 message-converter="jsonMessageConverter" prefetch="1">
@@ -104,12 +104,15 @@
            -->
         <rabbit:listener ref="mulitiQueueListener" queues="aa,bb" method="onMessage"/>
         <rabbit:listener ref="oneQueueListener" queues="ff" method="onMessage"/>
-
     </rabbit:listener-container>
+    <!-- manual -->
     <rabbit:listener-container  connection-factory="mqConnectionFactory"
                                 acknowledge="manual" concurrency="1"
                                 message-converter="jsonMessageConverter" prefetch="1" >
-        <rabbit:listener ref="sameQueueListener1" queues="cc" method="onMessage" />
+        <!-- 抓取数量过少，每次分配量都不超过第一个的接收量，就会一直在第一个监听进行
+             尽量不这么用
+          -->
+        <!--<rabbit:listener ref="sameQueueListener1" queues="cc" method="onMessage" />-->
         <rabbit:listener ref="sameQueueListener2" queues="cc" method="onMessage" />
     </rabbit:listener-container>
 </beans>

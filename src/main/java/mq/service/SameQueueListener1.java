@@ -1,7 +1,7 @@
 package mq.service;
 
+import com.alibaba.fastjson.JSONObject;
 import com.rabbitmq.client.Channel;
-import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.ChannelAwareMessageListener;
@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import sys.model.MqObject;
+
 
 
 /**
@@ -23,41 +24,27 @@ public class SameQueueListener1 implements ChannelAwareMessageListener {
     @Qualifier(value = "noExChangeTemplate")
     RabbitTemplate noExChangeTemplate;
 
+//    此方法可以在auto ack下使用，且不继承listener,只需在queue配置中指定此方法即可
 //    public void onMessage(MqObject object) {
 //        System.out.println(object.toString());
 //
 //    }
 
     public void onMessage(Message message, Channel channel) throws Exception {
-        MessageProperties messageProperties = message.getMessageProperties();
-//        channel.basicQos();
-        channel.basicAck(1,true);
-    }
-  /*
-  final int messageCount = 3;
-    boolean result = template.execute(new ChannelCallback<Boolean>() {
-
-        @Override
-        public Boolean doInRabbit(final Channel channel) throws Exception {
-            int n = messageCount;
-            channel.basicQos(messageCount); // prefetch
-            long deliveryTag = 0;
-            while (n > 0) {
-                GetResponse result = channel.basicGet("si.test.queue", false);
-                if (result != null) {
-                    System.out.println(new String(result.getBody()));
-                    deliveryTag = result.getEnvelope().getDeliveryTag();
-                    n--;
-                }
-                else {
-                    Thread.sleep(1000);
-                }
-            }
-            if (deliveryTag > 0) {
-                channel.basicAck(deliveryTag, true);
-            }
-            return true;
+        try {
+            MessageProperties properties = message.getMessageProperties();
+            long deliveryTag = properties.getDeliveryTag();
+//      测试：先确认消息
+            channel.basicAck(deliveryTag,true);
+            byte[] body = message.getBody();
+            System.out.println(body.toString());
+            String s = new String(body, "UTF-8");
+            System.out.println(s);
+            MqObject mqObject1 = JSONObject.parseObject(s, MqObject.class);
+            System.out.println(mqObject1.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-    });
-    */
+    }
+
 }
