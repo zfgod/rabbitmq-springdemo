@@ -1,9 +1,9 @@
 package mq.service;
 
-import com.rabbitmq.client.AMQP;
-import com.rabbitmq.client.BuiltinExchangeType;
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.MessageProperties;
+import com.alibaba.fastjson.JSONObject;
+import com.rabbitmq.client.*;
+import com.rabbitmq.client.impl.AMQImpl;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.springframework.amqp.rabbit.connection.Connection;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +11,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import sys.model.MqObject;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Consumer;
 
 /**
  * author: zf
@@ -101,9 +103,25 @@ public class BaseChannelService {
             connection = connectionFactory.createConnection();
             boolean transaction = false;
             channel = connection.createChannel(false);
-
-
-            channel.basicAck(1,true);
+            //声明队列，主要为了防止消息接收者先运行此程序，队列还不存在时创建队列。
+            String QUEUE_NAME = object.getQueue();
+            channel.queueDeclarePassive(QUEUE_NAME);
+            System.out.println("等待队列["+QUEUE_NAME+"]的消息");
+            //创建队列消费者
+            QueueingConsumer consumer = new QueueingConsumer(channel);
+            //指定消费队列
+            channel.basicConsume(QUEUE_NAME, true, consumer);
+//            channel.basicConsume(QUEUE_NAME, true, AMQImpl.Basic.Consume
+            while (true)
+            {
+                //nextDelivery是一个阻塞方法（内部实现其实是阻塞队列的take方法）
+                QueueingConsumer.Delivery delivery = consumer.nextDelivery();
+                String message = new String(delivery.getBody(),"UTF-8");
+                System.out.println("Received '" + message + "'");
+                MqObject mqObject = JSONObject.parseObject(message, MqObject.class);
+                System.out.println(mqObject.toString());
+            }
+//            channel.basicAck(1,true);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

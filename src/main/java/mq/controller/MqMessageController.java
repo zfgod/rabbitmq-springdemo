@@ -49,7 +49,7 @@ public class MqMessageController {
     @ResponseBody
     public void createChannelToReceiveMessageInDetail(MqObject object){
         try {
-
+            baseChannelService.recevieMessage(object);
         } catch (Exception e) {
             e.printStackTrace();
         }
