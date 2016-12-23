@@ -13,29 +13,24 @@ import javax.servlet.*;
 import java.io.IOException;
 
 /**
- * æ ¸å¿ƒçš„InterceptorStatusToken token = super.beforeInvocation(fi);
- * ä¼šè°ƒç”¨æˆ‘ä»¬å®šä¹‰çš„accessDecisionManager:decide(Object object)
- *            å’ŒsecurityMetadataSource:getAttributes(Object object)æ–¹æ³•ã€‚
- * è‡ªå·±å®ç°çš„è¿‡æ»¤ç”¨æˆ·è¯·æ±‚ç±»ï¼Œä¹Ÿå¯ä»¥ç›´æ¥ä½¿ç”¨ FilterSecurityInterceptor
- * 
- * AbstractSecurityInterceptoræœ‰ä¸‰ä¸ªæ´¾ç”Ÿç±»ï¼š
- * FilterSecurityInterceptorï¼Œè´Ÿè´£å¤„ç†FilterInvocationï¼Œå®ç°å¯¹URLèµ„æºçš„æ‹¦æˆªã€‚
- * MethodSecurityInterceptorï¼Œè´Ÿè´£å¤„ç†MethodInvocationï¼Œå®ç°å¯¹æ–¹æ³•è°ƒç”¨çš„æ‹¦æˆªã€‚
- * AspectJSecurityInterceptorï¼Œè´Ÿè´£å¤„ç†JoinPointï¼Œä¸»è¦æ˜¯ç”¨äºå¯¹åˆ‡é¢æ–¹æ³•(AOP)è°ƒç”¨çš„æ‹¦æˆªã€‚
- * 
- * è¿˜å¯ä»¥ç›´æ¥ä½¿ç”¨æ³¨è§£å¯¹Actionæ–¹æ³•è¿›è¡Œæ‹¦æˆªï¼Œä¾‹å¦‚åœ¨æ–¹æ³•ä¸ŠåŠ ï¼š
+ * ºËĞÄµÄInterceptorStatusToken token = super.beforeInvocation(fi);
+ * »áµ÷ÓÃÎÒÃÇ¶¨ÒåµÄaccessDecisionManager:decide(Object object)
+ *            ºÍsecurityMetadataSource:getAttributes(Object object)·½·¨¡£
+ * ×Ô¼ºÊµÏÖµÄ¹ıÂËÓÃ»§ÇëÇóÀà£¬Ò²¿ÉÒÔÖ±½ÓÊ¹ÓÃ FilterSecurityInterceptor
+ *
+ * AbstractSecurityInterceptorÓĞÈı¸öÅÉÉúÀà£º
+ * FilterSecurityInterceptor£¬¸ºÔğ´¦ÀíFilterInvocation£¬ÊµÏÖ¶ÔURL×ÊÔ´µÄÀ¹½Ø¡£
+ * MethodSecurityInterceptor£¬¸ºÔğ´¦ÀíMethodInvocation£¬ÊµÏÖ¶Ô·½·¨µ÷ÓÃµÄÀ¹½Ø¡£
+ * AspectJSecurityInterceptor£¬¸ºÔğ´¦ÀíJoinPoint£¬Ö÷ÒªÊÇÓÃÓÚ¶ÔÇĞÃæ·½·¨(AOP)µ÷ÓÃµÄÀ¹½Ø¡£
+ *
+ * »¹¿ÉÒÔÖ±½ÓÊ¹ÓÃ×¢½â¶ÔAction·½·¨½øĞĞÀ¹½Ø£¬ÀıÈçÔÚ·½·¨ÉÏ¼Ó£º
  * @PreAuthorize("hasRole('ROLE_SUPER')")
- * 
- * 
- * @author
- * 2013-11-19
- * @Email: mmm333zzz520@163.com
- * @version 1.0v
+ *
  */
 @Service("mySecurityFilter")
 public class MySecurityFilter extends AbstractSecurityInterceptor implements Filter {
-	//ä¸spring-security.xmlé‡Œçš„myFilterçš„å±æ€§securityMetadataSourceå¯¹åº”ï¼Œ
-	//å…¶ä»–çš„ä¸¤ä¸ªç»„ä»¶ï¼Œå·²ç»åœ¨AbstractSecurityInterceptorå®šä¹‰
+	//Óëspring-security.xmlÀïµÄmyFilterµÄÊôĞÔsecurityMetadataSource¶ÔÓ¦£¬
+	//ÆäËûµÄÁ½¸ö×é¼ş£¬ÒÑ¾­ÔÚAbstractSecurityInterceptor¶¨Òå
 	@Autowired
 	private MySecurityMetadataSource securityMetadataSource;
 	@Autowired
@@ -45,7 +40,6 @@ public class MySecurityFilter extends AbstractSecurityInterceptor implements Fil
 	
 	@PostConstruct
 	public void init(){
-//		System.err.println(" ---------------  MySecurityFilter init--------------- ");
 		super.setAuthenticationManager(myAuthenticationManager);
 		super.setAccessDecisionManager(accessDecisionManager);
 	}
@@ -62,13 +56,6 @@ public class MySecurityFilter extends AbstractSecurityInterceptor implements Fil
 	}
 	
 	private void invoke(FilterInvocation fi) throws IOException, ServletException {
-		// objectä¸ºFilterInvocationå¯¹è±¡
-                  //super.beforeInvocation(fi);æºç 
-		//1.è·å–è¯·æ±‚èµ„æºçš„æƒé™
-		//æ‰§è¡ŒCollection<ConfigAttribute> attributes = SecurityMetadataSource.getAttributes(object);
-		//2.æ˜¯å¦æ‹¥æœ‰æƒé™
-		//this.accessDecisionManager.decide(authenticated, object, attributes);
-//		System.err.println(" ---------------  MySecurityFilter invoke--------------- ");
 		InterceptorStatusToken token = super.beforeInvocation(fi);
 		try {
 			fi.getChain().doFilter(fi.getRequest(), fi.getResponse());
@@ -86,7 +73,6 @@ public class MySecurityFilter extends AbstractSecurityInterceptor implements Fil
 
 	@Override
 	public Class<? extends Object> getSecureObjectClass() {
-		//ä¸‹é¢çš„MyAccessDecisionManagerçš„supportsæ–¹é¢å¿…é¡»æ”¾å›true,å¦åˆ™ä¼šæé†’ç±»å‹é”™è¯¯
 		return FilterInvocation.class;
 	}
 }

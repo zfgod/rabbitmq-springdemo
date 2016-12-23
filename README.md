@@ -20,7 +20,8 @@
 >>2.1 channel<br>
  
 >>>几乎所有的操作都在channel中进行，channel是进行消息读写的通道。客户端可建立多个channel，每个channel代表一个会话任务 <br>
-   
+>>>java代码创建channel,发送消息和接收消息<br>
+
 >>2.2 exchange<br>     
    
 >>>交换机类型exchange-type:direct,topic,fanout,header <br>

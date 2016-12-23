@@ -19,56 +19,46 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * User userdetailè¯¥ç±»å®ç° UserDetails æ¥å£ï¼Œè¯¥ç±»åœ¨éªŒè¯æˆåŠŸåä¼šè¢«ä¿å­˜åœ¨å½“å‰å›è¯çš„principalå¯¹è±¡ä¸­
- * 
- * è·å¾—å¯¹è±¡çš„æ–¹å¼ï¼š
+ * org.springframework.security.core.userdetails.User
+ * 			¸ÃÀàÊµÏÖ UserDetails ½Ó¿Ú£¬¸ÃÀàÔÚÑéÖ¤³É¹¦ºó»á±»±£´æÔÚµ±Ç°»Ø»°µÄprincipal¶ÔÏóÖĞ
+ * »ñµÃ¶ÔÏóµÄ·½Ê½£º
  * WebUserDetails webUserDetails = (WebUserDetails)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
- * 
- * æˆ–åœ¨JSPä¸­ï¼š
+ * »òÔÚJSPÖĞ£º
  * <sec:authentication property="principal.username"/>
- * 
- * å¦‚æœéœ€è¦åŒ…æ‹¬ç”¨æˆ·çš„å…¶ä»–å±æ€§ï¼Œå¯ä»¥å®ç° UserDetails æ¥å£ä¸­å¢åŠ ç›¸åº”å±æ€§å³å¯
- * æƒé™éªŒè¯ç±»
- * @author
- * 2013-11-19
- * @Email: mmm333zzz520@163.com
- * @version 1.0v
+ *
+ * Èç¹ûĞèÒª°üÀ¨ÓÃ»§µÄÆäËûÊôĞÔ£¬¿ÉÒÔÊµÏÖ UserDetails ½Ó¿ÚÖĞÔö¼ÓÏàÓ¦ÊôĞÔ¼´¿É
+ * È¨ÏŞÑéÖ¤Àà
  */
 @Service
 public class MyUserDetailServiceImpl implements UserDetailsService {
-	
+
 	@Autowired
 	private UserMapper userDao;
 	@Autowired
 	private ResourcesMapper resourcesDao ;
-	// ç™»å½•éªŒè¯
+	// µÇÂ¼³É¹¦ ¼ÓÔØÓÃ»§µÄ×ÊÔ´È¨ÏŞ
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-//		System.err.println("-----------MyUserDetailServiceImpl loadUserByUsername ----------- ");
-		
-		//å–å¾—ç”¨æˆ·çš„æƒé™
+		// È¡µÃÓÃ»§µÄÈ¨ÏŞ
 		sys.model.User users = userDao.querySingleUser(username);
 		if  (users == null)
-            throw new UsernameNotFoundException(username+" not exist!");  
+            throw new UsernameNotFoundException(username+" not exist!");
 		Collection<GrantedAuthority> grantedAuths = obtionGrantedAuthorities(users);
-		// å°è£…æˆspring securityçš„user
-		User userdetail = new User(
-				users.getUserName(), 
+		// ·â×°³Éspring securityµÄuser
+		User userDetail = new User(
+				users.getUserName(),
 				users.getUserPassword(),
-				true, 
-				true, 
-				true,
-				true, 
-				grantedAuths	//ç”¨æˆ·çš„æƒé™
+				true, true, true, true,
+				grantedAuths	//ÓÃ»§µÄÈ¨ÏŞ
 			);
-		return userdetail;
+		return userDetail;
 	}
 
-	// å–å¾—ç”¨æˆ·çš„æƒé™
+	// È¡µÃÓÃ»§µÄÈ¨ÏŞ
 	private Set<GrantedAuthority> obtionGrantedAuthorities(sys.model.User user) {
 		List<Resources> resources = resourcesDao.getUserResources(String.valueOf(user.getUserName()));
 		Set<GrantedAuthority> authSet = new HashSet<GrantedAuthority>();
 		for (Resources res : resources) {
-			// TODO:ZZQ ç”¨æˆ·å¯ä»¥è®¿é—®çš„èµ„æºåç§°ï¼ˆæˆ–è€…è¯´ç”¨æˆ·æ‰€æ‹¥æœ‰çš„æƒé™ï¼‰ æ³¨æ„ï¼šå¿…é¡»"ROLE_"å¼€å¤´
+			// £¨»òÕßËµÓÃ»§ËùÓµÓĞµÄÈ¨ÏŞ£© ×¢Òâ£º±ØĞë"ROLE_"¿ªÍ·
 			authSet.add(new SimpleGrantedAuthority("ROLE_" + res.getResKey()));
 		}
 		return authSet;

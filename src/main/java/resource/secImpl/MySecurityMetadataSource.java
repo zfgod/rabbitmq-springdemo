@@ -13,11 +13,7 @@ import javax.annotation.PostConstruct;
 import java.util.*;
 
 /**
- * åŠ è½½èµ„æºä¸æƒé™çš„å¯¹åº”å…³ç³»
- * @author 
- * 2013-11-19
- * @Email: mmm333zzz520@163.com
- * @version 1.0v
+ * ¼ÓÔØ×ÊÔ´ÓëÈ¨ÏŞµÄ¶ÔÓ¦¹ØÏµ
  * */
 @Service
 public class MySecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
@@ -35,11 +31,7 @@ public class MySecurityMetadataSource implements FilterInvocationSecurityMetadat
 		return true;
 	}
 	/**
-	 * @PostConstructæ˜¯Java EE 5å¼•å…¥çš„æ³¨è§£ï¼Œ
-	 * Springå…è®¸å¼€å‘è€…åœ¨å—ç®¡Beanä¸­ä½¿ç”¨å®ƒã€‚å½“DIå®¹å™¨å®ä¾‹åŒ–å½“å‰å—ç®¡Beanæ—¶ï¼Œ
-	 * @PostConstructæ³¨è§£çš„æ–¹æ³•ä¼šè¢«è‡ªåŠ¨è§¦å‘ï¼Œä»è€Œå®Œæˆä¸€äº›åˆå§‹åŒ–å·¥ä½œï¼Œ
-	 * 
-	 * //åŠ è½½æ‰€æœ‰èµ„æºä¸æƒé™çš„å…³ç³»
+	 * ¼ÓÔØËùÓĞ×ÊÔ´ÓëÈ¨ÏŞµÄ¹ØÏµ
 	 */
 	@PostConstruct
 	private void loadResourceDefine() {
@@ -47,13 +39,16 @@ public class MySecurityMetadataSource implements FilterInvocationSecurityMetadat
 		if (resourceMap == null) {
 			resourceMap = new HashMap<String, Collection<ConfigAttribute>>();
 			List<Resources> resources = this.resourcesMapper.findAll();
+			ConfigAttribute configAttribute;
+			String resUrl;
 			for (Resources resource : resources) {
-				// TODO:ZZQ é€šè¿‡èµ„æºåç§°æ¥è¡¨ç¤ºå…·ä½“çš„æƒé™ æ³¨æ„ï¼šå¿…é¡»"ROLE_"å¼€å¤´
-				ConfigAttribute configAttribute = new SecurityConfig("ROLE_" + resource.getResKey());
-				String resUrl = resource.getResUrl();
+				//Í¨¹ı×ÊÔ´Ãû³ÆÀ´±íÊ¾¾ßÌåµÄÈ¨ÏŞ ×¢Òâ£º±ØĞë"ROLE_"¿ªÍ·
+				configAttribute = new SecurityConfig("ROLE_" + resource.getResKey());
+				resUrl = resource.getResUrl();
 				if(resourceMap.containsKey(resUrl)){
 					resourceMap.get(resUrl).add(configAttribute);
 				}else {
+                    //ĞÂput key-value,value list±ØĞëĞÂ½¨
 					Collection<ConfigAttribute> configAttributes = new ArrayList<ConfigAttribute>();
 					configAttributes.add(configAttribute);
 					resourceMap.put(resource.getResUrl(), configAttributes);
@@ -61,25 +56,22 @@ public class MySecurityMetadataSource implements FilterInvocationSecurityMetadat
 			}
 		}
 	}
-	//è¿”å›æ‰€è¯·æ±‚èµ„æºæ‰€éœ€è¦çš„æƒé™
+	/**
+	 * 	·µ»ØËùÇëÇó×ÊÔ´ËùĞèÒªµÄÈ¨ÏŞ
+	 */
 	public Collection<ConfigAttribute> getAttributes(Object object) throws IllegalArgumentException {
-//		System.err.println("-----------MySecurityMetadataSource getAttributes ----------- ");
 		String requestUrl = ((FilterInvocation) object).getRequestUrl();
-	   //System.out.println("requestUrl is " + requestUrl);
 		if(resourceMap == null) {
 			loadResourceDefine();
 		}
-		//System.err.println("resourceMap.get(requestUrl); "+resourceMap.get(requestUrl));
-		if(requestUrl.indexOf("?")> -1){ //å¤„ç†è¯·æ±‚åœ°å€åé¢å¸¦å‚æ•°
+		if(requestUrl.indexOf("?")> -1){//´¦ÀíÇëÇóµØÖ·ºóÃæ´ø²ÎÊı
 			requestUrl=requestUrl.substring(0,requestUrl.indexOf("?"));
 		}
 		Collection<ConfigAttribute> configAttributes = resourceMap.get(requestUrl);
-/*å¦‚æœä¸ºnull,åˆ™ä¸ºç³»ç»Ÿæœªå®šä¹‰çš„èµ„æºè·¯å¾„*/
+            /*Èç¹ûÎªnull,ÊÓÎªÏµÍ³Î´¶¨ÒåµÄ×ÊÔ´Â·¾¶*/
 		if(configAttributes == null){
-			configAttributes = resourceMap.get("undefine");//æ­¤æƒé™æ¯ä¸ªç”¨æˆ·éƒ½ä¸å…·æœ‰,åˆ™æœªåŠ å…¥çš„urlä¸ä¼šé€šè¿‡
+			configAttributes = resourceMap.get("undefine");//´ËÈ¨ÏŞÃ¿¸öÓÃ»§¶¼²»¾ßÓĞ,ÔòÎ´¼ÓÈëµÄurl²»»áÍ¨¹ı
 		}
 		return configAttributes;
 	}
-
-
 }

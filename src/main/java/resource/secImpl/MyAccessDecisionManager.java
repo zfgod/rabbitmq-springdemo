@@ -13,60 +13,50 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /**
- * è‡ªå·±å®ç°çš„è¿‡æ»¤ç”¨æˆ·è¯·æ±‚ç±»ï¼Œä¹Ÿå¯ä»¥ç›´æ¥ä½¿ç”¨ FilterSecurityInterceptor
- * 
- * AbstractSecurityInterceptoræœ‰ä¸‰ä¸ªæ´¾ç”Ÿç±»ï¼š
- * FilterSecurityInterceptorï¼Œè´Ÿè´£å¤„ç†FilterInvocationï¼Œå®ç°å¯¹URLèµ„æºçš„æ‹¦æˆªã€‚
- * MethodSecurityInterceptorï¼Œè´Ÿè´£å¤„ç†MethodInvocationï¼Œå®ç°å¯¹æ–¹æ³•è°ƒç”¨çš„æ‹¦æˆªã€‚
- * AspectJSecurityInterceptorï¼Œè´Ÿè´£å¤„ç†JoinPointï¼Œä¸»è¦æ˜¯ç”¨äºå¯¹åˆ‡é¢æ–¹æ³•(AOP)è°ƒç”¨çš„æ‹¦æˆªã€‚
- * 
- * è¿˜å¯ä»¥ç›´æ¥ä½¿ç”¨æ³¨è§£å¯¹Actionæ–¹æ³•è¿›è¡Œæ‹¦æˆªï¼Œä¾‹å¦‚åœ¨æ–¹æ³•ä¸ŠåŠ ï¼š
+ * ×Ô¼ºÊµÏÖµÄ¹ıÂËÓÃ»§ÇëÇóÀà£¬Ò²¿ÉÒÔÖ±½ÓÊ¹ÓÃ FilterSecurityInterceptor
+ *
+ * AbstractSecurityInterceptorÓĞÈı¸öÅÉÉúÀà£º
+ * FilterSecurityInterceptor£¬¸ºÔğ´¦ÀíFilterInvocation£¬ÊµÏÖ¶ÔURL×ÊÔ´µÄÀ¹½Ø¡£
+ * MethodSecurityInterceptor£¬¸ºÔğ´¦ÀíMethodInvocation£¬ÊµÏÖ¶Ô·½·¨µ÷ÓÃµÄÀ¹½Ø¡£
+ * AspectJSecurityInterceptor£¬¸ºÔğ´¦ÀíJoinPoint£¬Ö÷ÒªÊÇÓÃÓÚ¶ÔÇĞÃæ·½·¨(AOP)µ÷ÓÃµÄÀ¹½Ø¡£
+ *
+ * »¹¿ÉÒÔÖ±½ÓÊ¹ÓÃ×¢½â¶ÔAction·½·¨½øĞĞÀ¹½Ø£¬ÀıÈçÔÚ·½·¨ÉÏ¼Ó£º
  * @PreAuthorize("hasRole('ROLE_SUPER')")
- * <!-- ç”¨æˆ·æ˜¯å¦æ‹¥æœ‰æ‰€è¯·æ±‚èµ„æºçš„æƒé™ -->
- * 
- * @author
- * 2013-11-19
- * @Email: mmm333zzz520@163.com
- * @version 1.0v
+ * <!-- ÓÃ»§ÊÇ·ñÓµÓĞËùÇëÇó×ÊÔ´µÄÈ¨ÏŞ -->
  */
 @Service
 public class MyAccessDecisionManager implements AccessDecisionManager {
-	ConfigAttribute undefine = new SecurityConfig("ROLE_unDefineUrl");
 	public void decide(Authentication authentication, Object object, Collection<ConfigAttribute> configAttributes)
 			throws AccessDeniedException, InsufficientAuthenticationException {
-
-
-//		System.err.println(" ---------------  MyAccessDecisionManager --------------- ");
 		if(configAttributes == null) {
 			return;
 		}
-		//æ‰€è¯·æ±‚çš„èµ„æºæ‹¥æœ‰çš„æƒé™(ä¸€ä¸ªèµ„æºå¯¹å¤šä¸ªæƒé™)
+		/*ËùÇëÇóµÄ×ÊÔ´ÓµÓĞµÄÈ¨ÏŞ(Ò»¸ö×ÊÔ´¶Ô¶à¸öÈ¨ÏŞ)*/
 		Iterator<ConfigAttribute> iterator = configAttributes.iterator();
-//		å¤šä¸ªæƒé™ï¼Œåªè¦ç”¨æˆ·å…·å¤‡å…¶ä¸­ä¸€ä¸ªå°±è¡¨ç¤ºå¯ä»¥é€šè¿‡
+		/*µ±Ç°ÓÃ»§µÄ×ÊÔ´È¨ÏŞ*/
 		Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+		/*¶à¸öÈ¨ÏŞ£¬ÕâÀï²ÉÓÃÖ»ÒªÓÃ»§¾ß±¸ÆäÖĞÒ»¸ö¾Í±íÊ¾¿ÉÒÔÍ¨¹ı*/
+		ConfigAttribute configAttribute;
+		String needPermission;
 		while(iterator.hasNext()) {
-			ConfigAttribute configAttribute = iterator.next();
-			//è®¿é—®è¯·æ±‚èµ„æºæ‰€éœ€è¦çš„æƒé™
-			String needPermission = configAttribute.getAttribute();
-			//System.out.println("needPermission is " + needPermission);
-			//ç”¨æˆ·æ‰€æ‹¥æœ‰çš„æƒé™authentication
+			configAttribute = iterator.next();
+			//·ÃÎÊÇëÇó×ÊÔ´ËùĞèÒªµÄÈ¨ÏŞ
+			needPermission = configAttribute.getAttribute();
+			//ÓÃ»§ËùÓµÓĞµÄÈ¨ÏŞauthentication
 			for(GrantedAuthority ga : authorities) {
 				if(needPermission.equals(ga.getAuthority())) {
 					return;
 				}
 			}
 		}
-		//æ²¡æœ‰æƒé™
-		throw new AccessDeniedException(" æ²¡æœ‰æƒé™è®¿é—®ï¼ ");
+		throw new AccessDeniedException(" Ã»ÓĞÈ¨ÏŞ·ÃÎÊ£¡ ");
 	}
 
 	public boolean supports(ConfigAttribute attribute) {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
 	public boolean supports(Class<?> clazz) {
-		// TODO Auto-generated method stub
 		return true;
 	}
 	
